@@ -1,0 +1,4 @@
+.table-row-cell:odd
+{
+    -fx-background-color: lime;
+}
