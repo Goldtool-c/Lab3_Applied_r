@@ -203,10 +203,15 @@ public class Controller implements Initializable
                 temp[i[0]].setFloatX();
                 temp[i[0]].setResult();
                 this.ColumnX.setCellValueFactory(new PropertyValueFactory<>("X"));
+                ColumnX.setStyle("-fx-border-color: black");
                 this.ColumnValue.setCellValueFactory(new PropertyValueFactory<>("Value"));
+                ColumnValue.setStyle("-fx-border-color: black");
                 this.ColumnFloatValue.setCellValueFactory(new PropertyValueFactory<>("FloatX"));
+                ColumnFloatValue.setStyle("-fx-border-color: black");
                 this.ColumnDiff.setCellValueFactory(new PropertyValueFactory<>("Result"));
+                ColumnDiff.setStyle("-fx-border-color: black");
                 ObservableList<Polynomial> list= FXCollections.observableArrayList(temp);
+                Table1.setStyle("-fx-border-color: black");
                 this.Table1.setItems(list);
                 i[0]++;
             });

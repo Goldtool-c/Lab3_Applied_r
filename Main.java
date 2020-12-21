@@ -22,8 +22,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 450, 600));
+        primaryStage.setTitle("Lab3_TableView");
+        primaryStage.setScene(new Scene(root, 450, 320));
         TextField XField = new TextField();
         final String[] temp = new String[1];
         XField.textProperty().addListener(new ChangeListener<String>() {
